@@ -38,6 +38,12 @@
   .ico{width:40px;height:40px;border-radius:10px;background:#2a2215;color:var(--gold);display:grid;place-items:center;margin-bottom:14px;font-size:20px}
   .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
   .info .card strong{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .menu h3{color:var(--gold);margin-bottom:14px}
+  .price{list-style:none}
+  .price li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .price li:last-child{border-bottom:0}
+  .price b{color:var(--text);white-space:nowrap;font-weight:600}
   footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
   footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
   .float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.4)}
@@ -66,11 +72,53 @@
   <section id="servicos">
     <div class="wrap">
       <h2>Serviços</h2>
-      <p class="sub">Valores e disponibilidade direto pelo WhatsApp.</p>
-      <div class="grid">
-        <div class="card"><div class="ico">✂</div><h3>Corte de cabelo</h3><p>Corte masculino na tesoura ou máquina, com acabamento.</p></div>
-        <div class="card"><div class="ico">🪒</div><h3>Barba</h3><p>Modelagem, alinhamento e toalha quente.</p></div>
-        <div class="card"><div class="ico">★</div><h3>Corte + barba</h3><p>O combo completo para sair renovado.</p></div>
+      <p class="sub">Escolha o seu e agende pelo WhatsApp.</p>
+      <div class="menu">
+        <div class="card">
+          <h3>Experiências BarberHouse</h3>
+          <ul class="price">
+            <li><span>Corte Mestre</span><b>R$ 69,90</b></li>
+            <li><span>Barba de Respeito</span><b>R$ 79,90</b></li>
+            <li><span>Combo Executivo</span><b>R$ 129,90</b></li>
+            <li><span>Legado</span><b>R$ 129,90</b></li>
+            <li><span>Sob Medida</span><b>R$ 160,00</b></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Packs</h3>
+          <ul class="price">
+            <li><span>Cortepack</span><b>R$ 89,90</b></li>
+            <li><span>Barbapack</span><b>R$ 99,90</b></li>
+            <li><span>Combopack</span><b>R$ 159,90</b></li>
+            <li><span>Sob Medida Pack</span><b>R$ 169,90</b></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Corte e barba</h3>
+          <ul class="price">
+            <li><span>Cabelo</span><b>R$ 30,00</b></li>
+            <li><span>Barba</span><b>R$ 30,00</b></li>
+            <li><span>Cabelo e barba</span><b>R$ 60,00</b></li>
+            <li><span>Cabelo e sobrancelha</span><b>R$ 38,00</b></li>
+            <li><span>Corte infantil</span><b>R$ 35,00</b></li>
+            <li><span>Pezinho</span><b>R$ 15,00</b></li>
+            <li><span>Sobrancelha</span><b>R$ 8,00</b></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Química e cuidados</h3>
+          <ul class="price">
+            <li><span>Luzes</span><b>R$ 80,00</b></li>
+            <li><span>Nevou</span><b>R$ 150,00</b></li>
+            <li><span>Relaxamento</span><b>R$ 50,00</b></li>
+            <li><span>Hidratação capilar</span><b>R$ 30,00</b></li>
+            <li><span>Limpeza de pele</span><b>R$ 50,00</b></li>
+            <li><span>Pigmentação cabelo</span><b>R$ 15,00</b></li>
+            <li><span>Pigmentação barba</span><b>R$ 15,00</b></li>
+            <li><span>Depilação de orelha</span><b>R$ 20,00</b></li>
+            <li><span>Depilação de nariz</span><b>R$ 20,00</b></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
