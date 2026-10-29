@@ -67,13 +67,17 @@
   header{border-bottom-color:rgba(201,164,92,.35)}
   @media (min-width:760px){.menu{grid-template-columns:repeat(2,1fr)}}
   @media (min-width:760px){.info{grid-template-columns:repeat(2,1fr)}}
+  .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .team figure{margin:0;background:var(--card);border:1px solid rgba(201,164,92,.35);border-radius:14px;overflow:hidden}
+  .team img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+  .team figcaption{padding:14px 18px;font:600 20px/1.2 Oswald,sans-serif;letter-spacing:.04em;color:var(--gold);text-align:center}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
     <a class="logo" href="#">BARBER<span>HOUSE</span></a>
-    <nav><a href="#servicos">Serviços</a><a href="#contato">Contato</a><a href="privacidade.html">Privacidade</a></nav>
+    <nav><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a><a href="#contato">Contato</a><a href="privacidade.html">Privacidade</a></nav>
   </div>
 </header>
 
@@ -138,6 +142,18 @@
             <li><span>Depilação de nariz</span><b>R$ 20,00</b></li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipe">
+    <div class="wrap">
+      <h2>Nossa equipe</h2>
+      <p class="sub">Profissionais que cuidam do seu estilo.</p>
+      <div class="team">
+        <figure><img src="img/equipe-1.webp" alt="Gabriel, barbeiro da BarberHouse" width="480" height="600" loading="lazy"><figcaption>Gabriel</figcaption></figure>
+        <figure><img src="img/equipe-2.webp" alt="Wesley, barbeiro da BarberHouse" width="480" height="600" loading="lazy"><figcaption>Wesley</figcaption></figure>
+        <figure><img src="img/equipe-3.webp" alt="Kaio, barbeiro da BarberHouse" width="480" height="600" loading="lazy"><figcaption>Kaio</figcaption></figure>
       </div>
     </div>
   </section>
